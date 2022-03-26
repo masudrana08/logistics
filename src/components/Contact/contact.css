@@ -1,0 +1,26 @@
+.contactContainer{
+  background: var(--dark-color);
+}
+.formContainer{
+  width: 80%;
+  margin: auto;
+  
+}
+.form__row{
+  display: flex;
+  justify-content: center;
+}
+
+.form__row input, .form__row textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  color: var(--dark-color)
+}
+.form__row input::placeholder, .form__row textarea::placeholder{
+  color: var(--dark-color)
+}

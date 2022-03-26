@@ -12,6 +12,7 @@ const ContactSchema = mongoose.Schema({
   fname : String, 
   lname : String,
   company : String,
+  address : String,
   email : String,
   phone : Number || String,
   message : String,
@@ -20,9 +21,9 @@ const ContactSchema = mongoose.Schema({
 const ContactModel = new  mongoose.model('Contact', ContactSchema)
 
 app.post('/contact', (req, res)=>{
-  const {fname, lname, company, email, phone, message} = req.body
+  const {fname, lname, company, address, email, phone, message} = req.body
   const  Contact = new ContactModel({
-    fname, lname, company,  email, phone, message
+    fname, lname, company, address,  email, phone, message
   })
 
   Contact.save((err, result)=>{
