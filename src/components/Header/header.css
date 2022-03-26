@@ -3,7 +3,8 @@
 }
 
 .headerContainer{
-  position:  relative
+  position:  relative;
+  margin-top: 68px;
 }
 .header_content{
   position: absolute;

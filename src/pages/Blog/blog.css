@@ -24,3 +24,12 @@
 .blogContainer .row>*{
   padding-left: 0!important;
 }
+
+
+
+
+@media screen  and (max-width: 767px){
+  .blog_post .right{
+    margin-top: 20px;
+  }
+}

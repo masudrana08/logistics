@@ -32,6 +32,41 @@ app.post('/contact', (req, res)=>{
   })
 })
 
+
+const UserSchema = mongoose.Schema({
+  name: String,
+  email: String,
+  password: String
+})
+
+const UserModel = mongoose.model('User', UserSchema)
+
+app.post ('/login', (req, res)=>{
+ UserModel.findOne({email:req.body.email, password: req.body.password})
+ .then(result=>{
+   if(result){
+    res.status(200).send({email:result.email, name: result.name})
+   }else{
+     res.status(401).send({message:'failed'})
+   }
+ })
+})
+app.post ('/register', (req, res)=>{
+  const User = new UserModel({
+    name : req.body.name,
+    email : req.body.email,
+    password : req.body.password,
+  })
+  User.save((err, result)=>{
+    if(!err){
+      res.status(200).send({message:'registered'})
+    }else{
+      res.status(401).send({message:'failed'})
+    }
+  })
+
+})
+
 mongoose.connect('mongodb://localhost:27017/logistic', ()=>{
   console.log('DB Connected')
 });

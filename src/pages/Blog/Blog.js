@@ -32,6 +32,7 @@ export default function Blog() {
     <div>
       <MyNavbar />
       <div className="blogContainer">
+       
         {
           blogs.map((blog, i) => {
             return (
