@@ -14,7 +14,7 @@ export default function MyNavbar() {
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
-              <Nav.Link><Link style={{textDecoration:'none', color:'rgba(0,0,0,.55)'}} to='/blog'>Blog</Link></Nav.Link>
+              <Link style={{textDecoration:'none', color:'rgba(0,0,0,.55)'}} to='/blog'>Blog</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
