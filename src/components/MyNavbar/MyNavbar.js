@@ -8,15 +8,15 @@ export default function MyNavbar() {
     <div>
       <Navbar fixed='top' variant="light" bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home" >
+          <Navbar.Brand href="/#" >
             <img style={{height: '40px'}} src={Logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav style={{marginLeft:'auto'}}>
-              <Nav.Link href="#">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="/#">Home</Nav.Link>
+              <Nav.Link href="/#about">About</Nav.Link>
+              <Nav.Link href="/#contact">Contact</Nav.Link>
               <Nav.Link  href='/blog'>Blog</Nav.Link>
             </Nav>
           </Navbar.Collapse>

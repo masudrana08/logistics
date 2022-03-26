@@ -1,0 +1,25 @@
+.blogContainer{
+  padding-top: 150px;
+}
+.blog_post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 1px solid rgba(211, 211, 211, 0.336);
+}
+
+.blog_post .right{
+  height: 100%;
+  
+}
+.blog_post > div{
+  padding: 0 30px;
+}
+.blog_postContainer{
+  width:  70%; 
+  margin:  auto;
+}
+.blogContainer .row>*{
+  padding-left: 0!important;
+}
