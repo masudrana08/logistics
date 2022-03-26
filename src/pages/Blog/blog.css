@@ -19,6 +19,7 @@
 .blog_postContainer{
   width:  70%; 
   margin:  auto;
+  cursor: pointer;
 }
 .blogContainer .row>*{
   padding-left: 0!important;
