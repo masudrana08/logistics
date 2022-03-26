@@ -1,0 +1,10 @@
+.aboutContainer{
+  padding: 100px 0
+}
+
+@media screen and (max-width:767px) {
+  .about__left{
+    margin-bottom: 50px
+  }
+ 
+}

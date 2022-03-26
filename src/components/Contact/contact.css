@@ -1,5 +1,6 @@
 .contactContainer{
   background: var(--dark-color);
+  padding: 100px 0
 }
 .formContainer{
   width: 80%;
@@ -17,10 +18,16 @@
   outline: none;
   border-radius: 2px;
   border: 1px solid lightgray;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 7px 15px;
   color: var(--dark-color)
 }
 .form__row input::placeholder, .form__row textarea::placeholder{
   color: var(--dark-color)
+}
+
+.submit_btn{
+  background-color: var(--primary-color);
+  color: white!important;
+  border: none!important;
 }

@@ -1,4 +1,27 @@
 :root{
-  --primary-color : #0c750c;
+  --primary-color : #20a920;
   --dark-color:  #272727
 }
+
+.highlight{
+  color:  var(--primary-color)
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+button{
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  padding: 6px 15px;
+  color: white;
+}
+
+.nav-link{
+  font-weight: 600;
+}
+
+

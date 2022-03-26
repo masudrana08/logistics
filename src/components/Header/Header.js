@@ -25,9 +25,9 @@ export default function Header() {
       </video>
       <div className="header_content">
         <div>
-          <h2>
-            Dedicated to accomplishing your logistical needs no matter the  <span className='highlighted_text'>{text}</span>
-          </h2>
+          <h1 className='text-center'>
+            Dedicated to accomplishing your logistical needs no matter the <br />  <h1 className='highlighted_text'>{text}</h1>
+          </h1>
         </div>
       </div>
     </div>

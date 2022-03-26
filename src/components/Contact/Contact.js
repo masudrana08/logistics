@@ -19,11 +19,11 @@ export default function Contact() {
       })
   }
   return (
-    <div className='contactContainer'>
+    <div className='contactContainer' id="contact">
       <Row className='justify-content-center'>
         <Col md={10}>
           <div>
-            <h3 className='text-center text-white'>Contact Us</h3>
+            <h3 className='text-center text-white mb-5'>Contact Us</h3>
             <div className='formContainer'>
               <form onSubmit={handleSubmit((data) => handleContact(data))}>
                 <Row className='form__row'>
@@ -48,7 +48,7 @@ export default function Contact() {
                   <Col xs={12} >
                     <textarea {...register("message")} type="text" placeholder='Message' />
                   </Col>
-                  <Col><input xss={12} type="submit" value="Submit" /></Col>
+                  <Col><input className='submit_btn' xs={12} type="submit" value="Submit" /></Col>
                 </Row>
               </form>
             </div>
