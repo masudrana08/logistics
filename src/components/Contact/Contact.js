@@ -28,25 +28,25 @@ export default function Contact() {
               <form onSubmit={handleSubmit((data) => handleContact(data))}>
                 <Row className='form__row'>
                   <Col xs={12} md={6} >
-                    <input {...register("fname")} type="text" placeholder='First Name' />
+                    <input {...register("fname")} type="text" placeholder='First Name' required />
                   </Col>
                   <Col xs={12} md={6} >
-                    <input {...register("lname")} type="text" placeholder='Last Name' />
+                    <input {...register("lname")} type="text" placeholder='Last Name' required />
                   </Col>
                   <Col xs={12} md={6} >
-                    <input {...register("company")} type="text" placeholder='Company Name' />
+                    <input {...register("company")} type="text" placeholder='Company Name' required />
                   </Col>
                   <Col xs={12} md={6} >
-                    <input {...register("address")} type="text" placeholder='Address' />
+                    <input {...register("address")} type="text" placeholder='Address' required />
                   </Col>
                   <Col xs={12} md={6} >
-                    <input {...register("email")} type="text" placeholder='Email Address' />
+                    <input {...register("email")} type="text" placeholder='Email Address' required />
                   </Col>
                   <Col xs={12} md={6} >
-                    <input {...register("phone")} type="text" placeholder='Phone Number' />
+                    <input {...register("phone")} type="text" placeholder='Phone Number' required />
                   </Col>
                   <Col xs={12} >
-                    <textarea {...register("message")} type="text" placeholder='Message' />
+                    <textarea {...register("message")} type="text" placeholder='Message' required />
                   </Col>
                   <Col><input className='submit_btn' xs={12} type="submit" value="Submit" /></Col>
                 </Row>

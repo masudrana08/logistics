@@ -23,8 +23,7 @@
 
 
 .highlighted_text{
-  background: rgb(255 247 247 / 20%);
-  color: var(--primary-color);
+  color: #037c03;
   padding: 0 20px 5px;
   margin-top: 20px;
   display: inline-block;

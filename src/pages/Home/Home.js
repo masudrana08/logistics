@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../../components/About/About'
+import Broker from '../../components/Broker/Broker'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 import Header from '../../components/Header/Header'
@@ -10,6 +11,7 @@ export default function Home() {
     <div>
       <MyNavbar />
       <Header />
+      <Broker />
       <About />
       <Contact />
       {/* <Footer /> */}

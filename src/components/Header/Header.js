@@ -4,8 +4,12 @@ import MyVideo from '../../assets/video.mp4'
 export default function Header() {
   let selected = 0
   const arr = ["Terrain", "Environment", "Economy"]
-  const [text, setText] = useState(arr[selected])
+  const [text, setText] = useState('')
+  const [mytext, setMytext] = useState('Dedicated to accomplishing your logistical needs no matter the')
  useEffect(()=>{
+   setTimeout(()=>{
+    setText('Terrain')
+   },100)
   setInterval(()=>{
     if(selected<=2){
       setText(arr[selected])
@@ -26,7 +30,7 @@ export default function Header() {
       <div className="header_content">
         <div>
           <h1 className='text-center'>
-            Dedicated to accomplishing your logistical needs no matter the <br />  <h1 className='highlighted_text'>{text}</h1>
+             {mytext} <br/>  <span className='highlighted_text'>{text}</span>
           </h1>
         </div>
       </div>
