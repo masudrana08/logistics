@@ -12,14 +12,15 @@ export default function MyNavbar() {
     <div>
       <Navbar fixed='top' variant="light" bg="light" expand="lg">
         <Container>
-          <Navbar.Brand onClick={() => navigate('/')} style={{ cursor: 'pointer' }} >
+          <Navbar.Brand href='/#home' style={{ cursor: 'pointer' }} >
             <img style={{ height: '40px' }} src={Logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav style={{ marginLeft: 'auto' }}>
-              <Nav.Link onClick={() => navigate('/')}>Home</Nav.Link>
+              <Nav.Link href="/#home" >Home</Nav.Link>
               <Nav.Link href="/#about">About</Nav.Link>
+              <Nav.Link href="/#broker">Broker</Nav.Link>
               <Nav.Link href="/#contact">Contact</Nav.Link>
               <Nav.Link onClick={() => navigate('/blog')}>Blog</Nav.Link>
               {

@@ -2,20 +2,20 @@ import React, {useEffect, useState} from 'react'
 import './header.css'
 import MyVideo from '../../assets/video.mp4'
 export default function Header() {
-  let selected = 0
+  let selected = 1
   const arr = ["Terrain", "Environment", "Economy"]
   const [text, setText] = useState('')
   const [mytext, setMytext] = useState('')
  useEffect(()=>{
-   setTimeout(()=>{
-     setMytext('Dedicated to accomplishing your logistical needs no matter the')
+    setTimeout(()=>{
+    setMytext(`Dedicated to accomplishing your logistical needs no matter the`)
     setText('Terrain')
-   },100)
+     
+   },1000)
   setInterval(()=>{
     if(selected<=2){
       setText(arr[selected])
       if(selected==2){
-        console.log(selected)
         selected = 0
       }else{
         selected += 1
@@ -24,15 +24,15 @@ export default function Header() {
   },3000)
  },[])
   return (
-    <div className='headerContainer'>
+    <div className='headerContainer' id='home'>
       <video className='headerVideo' src={MyVideo} controls={false} muted autoPlay={true} preload="auto" loop>
          video  is not supported here
       </video>
       <div className="header_content">
         <div>
-          <h1 className='text-center'>
-             {mytext} <br/>  <span className='highlighted_text'>{text}</span>
-          </h1>
+          <h2 className='text-center'>
+             {mytext} <span className='highlight'>{text}</span>
+          </h2>
         </div>
       </div>
     </div>

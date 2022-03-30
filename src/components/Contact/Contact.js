@@ -7,6 +7,7 @@ export default function Contact() {
   const { register, handleSubmit } = useForm();
   const backendUrl = 'http://localhost:5555/contact'
   function handleContact(data) {
+    console.log(data)
     fetch(backendUrl, {
       method: 'POST',
       headers: {
@@ -18,6 +19,7 @@ export default function Contact() {
         console.log(res)
       })
   }
+
   return (
     <div className='contactContainer' id="contact">
       <Row className='justify-content-center'>

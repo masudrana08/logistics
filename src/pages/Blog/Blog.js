@@ -37,7 +37,7 @@ export default function Blog() {
       <MyNavbar />
       <div className="blogContainer">
        
-        {
+        { 
           blogs.map((blog, i) => {
             return (
               <div onClick={() => navigate('/blog/' + Number(i))} key={i} className='blog_postContainer'>

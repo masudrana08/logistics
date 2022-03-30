@@ -11,8 +11,8 @@ export default function Home() {
     <div>
       <MyNavbar />
       <Header />
-      <Broker />
       <About />
+      <Broker />
       <Contact />
       {/* <Footer /> */}
     </div>

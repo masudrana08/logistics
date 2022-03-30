@@ -6,7 +6,7 @@ import TruckImg from '../../assets/img/truckMountains.jpg'
 export default function Broker() {
   const navigate = useNavigate()
   return (
-    <div className='brokerContainer' id='about'>
+    <div className='brokerContainer' id='broker'>
       <Row className='justify-content-center align-items-center'>
       <Col xs={10} md={5}>
           <img style={{ width: '100%' }} src={TruckImg} alt="" />
