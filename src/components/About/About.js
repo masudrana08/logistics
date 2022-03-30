@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import EmployeeImg from '../../assets/img/employee.jpg'
+import TruckImg from '../../assets/img/trucksLine.jpg'
 import { Col, Row } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
           <button onClick={()=>navigate('/blog')}>See our Articles</button>
         </Col>
         <Col xs={10} md={5}>
-          <img style={{width:'100%'}} src={EmployeeImg} alt="" />
+          <img style={{width:'100%'}} src={TruckImg} alt="" />
         </Col>
       </Row>
 

@@ -5,9 +5,10 @@ export default function Header() {
   let selected = 0
   const arr = ["Terrain", "Environment", "Economy"]
   const [text, setText] = useState('')
-  const [mytext, setMytext] = useState('Dedicated to accomplishing your logistical needs no matter the')
+  const [mytext, setMytext] = useState('')
  useEffect(()=>{
    setTimeout(()=>{
+     setMytext('Dedicated to accomplishing your logistical needs no matter the')
     setText('Terrain')
    },100)
   setInterval(()=>{

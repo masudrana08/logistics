@@ -1,31 +1,35 @@
 import React from 'react'
 import MyNavbar from '../../components/MyNavbar/MyNavbar'
-import TravelImg from '../../assets/img/travel.jpg'
 import { Col, Row } from 'react-bootstrap'
 import './blog.css'
 import { useNavigate } from 'react-router-dom';
+import Img1 from '../../assets/img/blueTrucks.jpg'
+import Img2 from '../../assets/img/blackwhiteTruck.jpg'
+import Img3 from '../../assets/img/redTruck.jpg'
+import Img4 from '../../assets/img/yellowTruck.jpg'
+import Img5 from '../../assets/img/truckMountains.jpg'
 export default function Blog() {
   const navigate = useNavigate()
   const blogs = [
     {
       title: 'Expansion in Progress',
       description: 'Jet Freight is happy to announce that we are opening up a second locate in the Kansas City, MO area by signification increasing our warehouse space. With over 80,000 square feet of useable space to better suit your needs. We appreciate everyone that stopped by to celebrate.',
-      img: TravelImg
+      img: Img1
     },
     {
       title: 'Expansion in Progress',
       description: 'Jet Freight is happy to announce that we are opening up a second locate in the Kansas City, MO area by signification increasing our warehouse space. With over 80,000 square feet of useable space to better suit your needs. We appreciate everyone that stopped by to celebrate.',
-      img: TravelImg
+      img: Img2
     },
     {
       title: 'Expansion in Progress',
       description: 'Jet Freight is happy to announce that we are opening up a second locate in the Kansas City, MO area by signification increasing our warehouse space. With over 80,000 square feet of useable space to better suit your needs. We appreciate everyone that stopped by to celebrate.',
-      img: TravelImg
+      img: Img3
     },
     {
       title: 'Expansion in Progress',
       description: 'Jet Freight is happy to announce that we are opening up a second locate in the Kansas City, MO area by signification increasing our warehouse space. With over 80,000 square feet of useable space to better suit your needs. We appreciate everyone that stopped by to celebrate.',
-      img: TravelImg
+      img: Img4
     },
   ]
   return (
@@ -36,7 +40,7 @@ export default function Blog() {
         {
           blogs.map((blog, i) => {
             return (
-              <div onClick={() => navigate('/blog/' + i+1)} key={i} className='blog_postContainer'>
+              <div onClick={() => navigate('/blog/' + Number(i))} key={i} className='blog_postContainer'>
                 <Row className='blog_post' >
                   <Col xs={12} md={5}>
                     <img style={{ width: '100%' }} src={blog.img} alt="" />

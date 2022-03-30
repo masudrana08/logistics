@@ -1,15 +1,15 @@
 import React from 'react'
 import './broker.css'
-import EmployeeImg from '../../assets/img/employee.jpg'
 import { Col, Row } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
+import TruckImg from '../../assets/img/truckMountains.jpg'
 export default function Broker() {
   const navigate = useNavigate()
   return (
     <div className='brokerContainer' id='about'>
       <Row className='justify-content-center align-items-center'>
       <Col xs={10} md={5}>
-          <img style={{ width: '100%' }} src={EmployeeImg} alt="" />
+          <img style={{ width: '100%' }} src={TruckImg} alt="" />
         </Col>
         <Col xs={10} md={5} className='broker__right'>
           <h3 className='highlight'>Why do you need a freight broker?</h3>
